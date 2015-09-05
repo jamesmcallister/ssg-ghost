@@ -1,8 +1,7 @@
-if you have port conficlks, change the port in node-modles/ghost/config.js file.
+To install, run `npm install` you might need to run it as sudo.
 
+Once installed, run `node hello` - to load the ghost instance
 
-so install, run `npm install`
+Then run in a new terminal window `npm start` - to run cssnext and browsersync.
 
-once installed run `node hello`
-
-then run in a new terminal window `npm start`
+Enjoy live editing in the borwser with ghost.
