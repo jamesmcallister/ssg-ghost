@@ -1,0 +1,57 @@
+@import './base.css';
+
+.logo-ellipse{
+  /*display: none;*/
+  fill: var(--vg-green);
+}
+.logo-color{
+ color: white;
+ }
+
+.logo-container{
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.logo-item{
+  flex: 1 1 auto;
+  }
+ .logo-item img, .img-list{
+  max-height: 10rem;
+  max-width: 10rem;
+  min-height: 6rem;
+  min-width: 6rem;
+ }
+ 
+
+ 
+ 
+ :root {
+  --vg-green: rgba(0, 146, 69, 1.0);
+}
+
+.vg-green {
+  color: var(--vg-green);
+  fill: var(--vg-green);
+}
+
+/* filters */
+un-blur {
+filter: none;
+}
+
+.blur {
+filter: blur(4px);
+}
+.sepia {
+filter: sepia(.4);
+}
+
+.author-thumb{
+  max-height: 4rem;
+  max-width: 4rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border-radius: 50px;
+  
+}

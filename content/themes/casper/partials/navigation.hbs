@@ -1,0 +1,19 @@
+<header class="auto">
+  <nav class="flex flex-justify flex-center white bg-black">
+      <div class="flex-auto"></div>
+      <div class="sm-col"><svg class="vg-logo vg-green" role="img" title="vg-logo" viewbox="0 0 400 255" width="200" height="200"><use xlink:href="/content/images/site/svg-logo-working.svg#vg-logo"></use></div>
+      <div class="flex-auto"></div> 
+    {{#foreach navigation}}
+          <div class="sm-col"><a href="{{url absolute="true"}}" class="btn py2 nowrap {{#if current}} btn-primary:active{{/if}} ">{{label}}</a></div>
+    {{/foreach}}
+          <div class="flex-auto "></div>
+          <div class="sm-col-right center"><a href="https://goo.gl/QMBSv4" target="_blank">High Street <br> Wingham</a></div>
+          <div class="sm-col-right center p2"><a href="tel:+441227721106">01227<br>721106</a></div>
+          <div class="flex-auto "></div>
+</nav>
+  <div class="center px1 py2 bg-black yellow">
+    <p class="h3">{{@blog.description}}</p>
+  </div>
+
+
+</header>

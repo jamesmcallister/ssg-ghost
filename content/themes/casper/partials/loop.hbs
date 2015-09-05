@@ -1,0 +1,31 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+<div class="extra-pagination inner">
+    {{pagination}}
+</div>
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<div class="center flex-auto p2">
+  <div class="flex mxn2">
+    <div class="col-3 border-box p2"><span class="f4"><a href="{{url}}">{{{title}}}</pan>
+    <img src="{{image}}" class="img-list" style="max" alt=""></a>
+    </div>
+    
+    
+    <div class="flex-auto p2">
+        <div class="p2 f4 border">
+            <p>{{excerpt words="26"}} <a class="" href="{{url}}">&raquo;</a></p>
+        </div>
+    </div>
+    
+    
+    <div class="col-4 border-box p2"><div class="p2 border">{{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
+        {{author}}
+        {{tags prefix=" on "}}
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></div></div>
+  </div>
+</div>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}
