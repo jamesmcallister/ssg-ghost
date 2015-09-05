@@ -2,7 +2,10 @@
 
 .logo-ellipse{
   /*display: none;*/
-  fill: var(--vg-green);
+  /*fill: var(--vg-green);*/
+  fill: white;
+  
+  
 }
 .logo-color{
  color: white;
